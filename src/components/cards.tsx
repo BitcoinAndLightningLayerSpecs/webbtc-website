@@ -23,7 +23,7 @@ export default function Cards({
       justifyContent: "space-evenly",
       alignItems: "center",
       width: "100%",
-      maxWidth: { xs: "530px", md: "100%" },
+      maxWidth: { xs: "530px", md: "1200px" },
     },
     description: {
       display: "flex",
