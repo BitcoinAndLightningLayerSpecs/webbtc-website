@@ -8,19 +8,16 @@ export default function Setup() {
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
-      padding: { xs: "80px 24px 100px", sm: "80px 24px 100px" },
-      width: {
-        xs: "100%",
-      },
+      padding: { xs: "0px 25px", md: "60px 24px 80px" },
     },
     containerImage: {
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
       img: {
-        margin: "0px auto 20px",
+        margin: { xs: "0px", sm: "0px auto 20px" },
         width: "100%",
-        maxWidth: "500px",
+        maxWidth: { xs: "500px", md: "100%" },
       },
     },
     title: {
@@ -47,7 +44,7 @@ export default function Setup() {
     <Container sx={styles.root}>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6} sx={styles.containerImage}>
-          <img src="/images/setup.png" alt="setup" />
+          <img src="/images/illustrations/setup.png" alt="setup" />
         </Grid>
         <Grid item xs={12} md={6}>
           <Box sx={styles.containerText}>

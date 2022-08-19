@@ -19,11 +19,11 @@ export default function Cards({
       display: "flex",
       flexDirection: "column",
       textAlign: { xs: "left", md: "center" },
-      padding: { xs: "50px 24px", md: "100px 24px" },
+      padding: "50px 24px",
       justifyContent: "space-evenly",
       alignItems: "center",
       width: "100%",
-      maxWidth: { xs: "530px", md: "1200px" },
+      maxWidth: { xs: "530px", md: "1100px" },
     },
     description: {
       display: "flex",
@@ -52,11 +52,11 @@ export default function Cards({
       fontSize: "20px",
       fontWeight: "400",
       lineHeight: "30px",
-      maxWidth: "800px",
+      maxWidth: "825px",
       opacity: "0.8",
     },
     cardsContainer: {
-      margin: "20px auto",
+      margin: "0px auto",
     },
     paper: {
       background: "#111520",
@@ -67,6 +67,7 @@ export default function Cards({
       flexDirection: "column",
       justifyContent: "flex-start",
       height: "100%",
+      boxShadow: "10px 10px 20px rgba(0, 0, 0, 0.25)",
     },
     cardTitle: {
       fontSize: "24px",
@@ -100,7 +101,7 @@ export default function Cards({
       <Grid container sx={styles.cardsContainer}>
         {cards.map((card: { image: string; title: string; text: string }) => (
           <Grid item xs={12} md={4} sx={styles.gridItem}>
-            <Paper sx={styles.paper} elevation={6}>
+            <Paper sx={styles.paper} elevation={0}>
               <Box sx={styles.cardImage}>
                 <img src={card.image} alt={card.title} />
               </Box>

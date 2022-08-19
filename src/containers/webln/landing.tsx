@@ -1,5 +1,6 @@
 import { Button, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 export default function Landing() {
   const styles = {
@@ -8,11 +9,11 @@ export default function Landing() {
       flexDirection: "column",
       textAlign: "center",
       justifyContent: "center",
-      maxWidth: "665px",
+      maxWidth: "765px",
       padding: "0px 25px",
       margin: {
         xs: "50px auto",
-        md: "150px auto",
+        md: "100px auto",
       },
     },
     title: {
@@ -53,7 +54,7 @@ export default function Landing() {
       fontSize: "16px",
       lineHeight: "24px",
       "&:hover": {
-        background: "#1DA2CC",
+        background: "#FFB800",
       },
     },
   };
@@ -70,10 +71,19 @@ export default function Landing() {
         Network. Request or send payments & much more
       </Typography>
       <Box>
-        <Button variant="contained" sx={styles.button} color="primary">
+        <Button
+          variant="contained"
+          sx={styles.button}
+          color="primary"
+          endIcon={<ChevronRightIcon />}
+        >
           Learn more
         </Button>
-        <Button variant="contained" sx={styles.button}>
+        <Button
+          variant="contained"
+          sx={styles.button}
+          endIcon={<ChevronRightIcon />}
+        >
           Developer Docs
         </Button>
       </Box>

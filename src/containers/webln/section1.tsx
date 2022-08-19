@@ -1,4 +1,4 @@
-import Cards from "../components/cards";
+import Cards from "../../components/cards";
 
 export default function Section1() {
   const cardInfo = {
@@ -8,17 +8,17 @@ export default function Section1() {
     cards: [
       {
         title: "Open Network",
-        image: "/images/open-network.png",
+        image: "/images/icons/open-network.png",
         text: "Add a permissionless and global payment network. Allow anyone to exchange payments with your app.",
       },
       {
         title: "Improved UX",
-        image: "/images/improved-ux.png",
+        image: "/images/icons/improved-ux.png",
         text: "No friction of searching for payment card details or mobile wallets to scan QR codes.",
       },
       {
         title: "New Use-cases",
-        image: "/images/new-use-cases.png",
+        image: "/images/icons/new-use-cases.png",
         text: "Create apps with instant micropayments, streaming money, passwordless authentication and more.",
       },
     ],

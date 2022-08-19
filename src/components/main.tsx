@@ -1,11 +1,11 @@
 import Box from "@mui/material/Box";
 import { ReactElement } from "react";
 
-export default function Footer({
-  children,
-}: {
+interface MainProps {
   children: ReactElement | ReactElement[];
-}) {
+}
+
+export default function Footer({ children }: MainProps) {
   const styles = {
     root: {
       minWidth: "320px",

@@ -43,7 +43,15 @@ const NavbarButton = ({
   );
 };
 
-export default function Header() {
+export default function Header(props: {
+  name: string;
+  logo: string;
+  links: {
+    title: string;
+  }[];
+}) {
+  const { name, logo, links } = props;
+
   const styles = {
     root: {
       flexGrow: 1,
@@ -70,12 +78,12 @@ export default function Header() {
       >
         <Toolbar>
           <Box sx={styles.logo}>
-            <img src="/images/webln-logo.png" alt="webln logo" />
+            <img src={logo} alt={name} />
           </Box>
           <Box sx={styles.navbar}>
-            <NavbarButton color="secondary">Home</NavbarButton>
-            <NavbarButton>Developers Docs</NavbarButton>
-            <NavbarButton>Current Projects</NavbarButton>
+            {links.map((link: { title: string }) => (
+              <NavbarButton>{link.title}</NavbarButton>
+            ))}
           </Box>
         </Toolbar>
       </AppBar>

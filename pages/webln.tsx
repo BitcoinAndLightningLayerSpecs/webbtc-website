@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import Main from "../src/components/main";
-import HeaderWebBTC from "../src/containers/webbtc/header";
-import Landing from "../src/containers/webbtc/landing";
-import Setup from "../src/containers/webbtc/setup";
-import Section1 from "../src/containers/webbtc/section1";
-import Section2 from "../src/containers/webbtc/section2";
-import ProvidersWebBTC from "../src/containers/webbtc/providers";
-import ContactWebBTC from "../src/containers/webbtc/contact";
-import Footer from "../src/containers/webbtc/footer";
+import HeaderWebLN from "../src/containers/webln/header";
+import Landing from "../src/containers/webln/landing";
+import Setup from "../src/containers/webln/setup";
+import Section1 from "../src/containers/webln/section1";
+import Section2 from "../src/containers/webln/section2";
+import ProvidersWebLN from "../src/containers/webln/providers";
+import ContactWebLN from "../src/containers/webln/contact";
+import Footer from "../src/containers/webln/footer";
 import { motion } from "framer-motion";
 
 const Home: NextPage = () => {
@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
-        <HeaderWebBTC />
+        <HeaderWebLN />
       </motion.div>
       <motion.div
         transition={{ ease: "easeIn", duration: 0.5 }}
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
-        <ProvidersWebBTC />
+        <ProvidersWebLN />
       </motion.div>
       <motion.div
         transition={{ ease: "easeIn", duration: 0.5 }}
@@ -67,7 +67,7 @@ const Home: NextPage = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
-        <ContactWebBTC />
+        <ContactWebLN />
       </motion.div>
       <motion.div
         transition={{ ease: "easeIn", duration: 0.5 }}

@@ -1,4 +1,4 @@
-import Cards from "../components/cards";
+import Cards from "../../components/cards";
 
 export default function Section2() {
   const cardInfo = {
@@ -8,17 +8,17 @@ export default function Section2() {
     cards: [
       {
         title: "Simple Integration",
-        image: "/images/simple-integration.png",
+        image: "/images/icons/simple-integration.png",
         text: "WebLN can be integrated into existing apps very easily, often by just adding a few lines of code. ",
       },
       {
         title: "Superior UX for your users",
-        image: "/images/superior-ux.png",
+        image: "/images/icons/superior-ux.png",
         text: "Boost conversion with seamless one-click payments in any browser: mobile or desktop",
       },
       {
         title: "No Vendor Lock-in",
-        image: "/images/no-vendor-lock-in.png",
+        image: "/images/icons/no-vendor-lock-in.png",
         text: "Build on an open and decentralized peer-to-peer network made for inexpensive transactions at scale.",
       },
     ],
