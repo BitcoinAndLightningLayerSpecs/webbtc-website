@@ -10,25 +10,25 @@ export default function FooterWebBTC() {
         title: "App & Wallet Developers",
         links: [
           {
-            title: "Developer guide",
-            link: "https://bitcoiners.org",
+            title: "WebBTC Specification",
+            link: "https://balls.dev/webbtc/",
           },
           {
-            title: "WebBTC Specs",
-            link: "https://bitcoiners.org",
-          },
-          {
-            title: "App Directory",
-            link: "https://bitcoiners.org",
+            title: "WebLN",
+            link: "https://webln.guide",
           },
         ],
       }}
       column3={{
-        title: "Contact",
+        title: "Feedback & Questions",
         links: [
           {
-            title: "Got questions?",
-            link: "https://bitcoiners.org",
+            title: "Telegram",
+            link: "https://t.me/bitcoinandlightningspecs",
+          },
+          {
+            title: "Github",
+            link: "https://github.com/BitcoinAndLightningLayerSpecs/WebBTC/",
           },
         ],
       }}

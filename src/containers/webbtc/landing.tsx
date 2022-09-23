@@ -8,7 +8,7 @@ export default function Landing() {
       flexDirection: "column",
       textAlign: "left",
       justifyContent: "center",
-      padding: { xs: "0px 25px", sm: "0px 20px", md: "0px 100px" },
+      padding: { xs: "0px 25px", sm: "0px 20px", md: "0px 0px 0px 70px" },
       maxWidth: { xs: "500px", md: "1200px" },
       margin: {
         xs: "0px auto",
@@ -68,7 +68,11 @@ export default function Landing() {
       <Grid container spacing={6}>
         <Grid item xs={12} md={7}>
           <Typography sx={styles.title}>
-            Combine the power of Bitcoin with your website!
+            Combine the
+            <br />
+            power of Bitcoin
+            <br />
+            with your website!
           </Typography>
           <Typography sx={styles.subtitle}>
             WebBTC is a set of specifications for web apps and client providers

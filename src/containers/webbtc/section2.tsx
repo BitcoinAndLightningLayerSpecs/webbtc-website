@@ -9,7 +9,7 @@ export default function Section2() {
       {
         title: "Simple Integration",
         image: "/images/icons/simple-integration.png",
-        text: "WebLN can be integrated into existing apps very easily, often by just adding a few lines of code. ",
+        text: "WebBTC can be integrated into existing apps very easily, often by just adding a few lines of code. ",
       },
       {
         title: "Superior UX",
