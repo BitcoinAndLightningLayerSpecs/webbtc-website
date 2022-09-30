@@ -98,6 +98,13 @@ export default function Setup() {
             >
               Developer Docs
             </Button>
+            <Button
+              variant="text"
+              sx={styles.button}
+              endIcon={<ChevronRightIcon />}
+            >
+              Developer Docs
+            </Button>
           </Box>
         </Grid>
       </Grid>

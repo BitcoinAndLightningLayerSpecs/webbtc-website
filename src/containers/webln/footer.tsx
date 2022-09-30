@@ -16,11 +16,7 @@ export default function FooterWebLN() {
           {
             title: "WebLN Specs",
             link: "https://bitcoiners.org",
-          },
-          {
-            title: "App Directory",
-            link: "https://bitcoiners.org",
-          },
+          }
         ],
       }}
       column3={{

@@ -5,11 +5,7 @@ export default function HeaderWebLN() {
     <Header
       name="WebLN"
       logo="/images/webln-logo.png"
-      links={[
-        { title: "Home" },
-        { title: "Developers Docs" },
-        { title: "Current Projects" },
-      ]}
+      links={[]}
     />
   );
 }

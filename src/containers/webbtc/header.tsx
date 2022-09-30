@@ -5,7 +5,7 @@ export default function HeaderWebBTC() {
     <Header
       name="WebBTC"
       logo="/images/webbtc-logo.png"
-      links={[{ title: "Developers Docs" }, { title: "Current Projects" }]}
+      links={[]}
     />
   );
 }

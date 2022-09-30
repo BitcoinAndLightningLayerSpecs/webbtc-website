@@ -34,7 +34,7 @@ export default function Cards({
     tag: {
       background: "#C1E2E6",
       color: "#0A0D13",
-      borderRadius: "5px",
+      borderRadius: "10px",
       fontSize: "16px",
       lineHeight: "24px",
       padding: "5px 10px",

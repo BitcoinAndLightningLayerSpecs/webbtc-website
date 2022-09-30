@@ -14,7 +14,7 @@ export default function FooterWebBTC() {
             link: "https://balls.dev/webbtc/",
           },
           {
-            title: "WebLN",
+            title: "WebLN Guide",
             link: "https://webln.guide",
           },
         ],

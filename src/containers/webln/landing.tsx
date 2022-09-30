@@ -68,20 +68,13 @@ export default function Landing() {
       </Typography>
       <Typography sx={styles.subtitle}>
         A unified standard for websites to interact with the Bitcoin Lightning
-        Network. Request or send payments & much more
+        Network. Request or send payments &amp; much more.
       </Typography>
       <Box>
         <Button
           variant="contained"
           sx={styles.button}
-          color="primary"
-          endIcon={<ChevronRightIcon />}
-        >
-          Learn more
-        </Button>
-        <Button
-          variant="contained"
-          sx={styles.button}
+          href="https://www.webln.guide"
           endIcon={<ChevronRightIcon />}
         >
           Developer Docs

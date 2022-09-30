@@ -45,10 +45,12 @@ export default function Providers(props: ProvidersProps) {
       flexDirection: "row",
       flexWrap: "wrap",
       justifyContent: "space-evenly",
-      img: {
-        margin: "0px auto",
-        width: { xs: "80px", sm: "100px", md: "140px" },
-        height: { xs: "80px", sm: "100px", md: "140px" },
+      a: {
+        margin: "10px",
+        img: {
+          width: { xs: "80px", sm: "100px", md: "140px" },
+          height: { xs: "80px", sm: "100px", md: "140px" },
+        }
       },
     },
   };
@@ -59,9 +61,11 @@ export default function Providers(props: ProvidersProps) {
         <Typography sx={styles.description}>{description}</Typography>
       </Box>
       <Box sx={styles.imagesContainer}>
-        {apps.map(({ image, name }) => (
+        {apps.map(({ image, name, link }) => (
           <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-            <img src={image} alt={name} />
+            <a href={link}>
+              <img src={image} alt={name} />
+            </a>
           </motion.div>
         ))}
       </Box>
