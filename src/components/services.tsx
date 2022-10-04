@@ -27,7 +27,7 @@ export default function Services(props: ServicesProps) {
       maxWidth: "825px",
     },
     title: {
-      fontSize: { xs: "24px", sm: "16px" },
+      fontSize: "16px",
       opacity: 0.5
     },
     imagesContainer: {
@@ -36,11 +36,11 @@ export default function Services(props: ServicesProps) {
       display: "flex",
       flexDirection: "row",
       flexWrap: "wrap",
-      justifyContent: "space-evenly",
+      justifyContent: "center",
       a: {
         margin: "20px",
         img: {
-          height: { xs: "30px", sm: "40px", md: "50px" },
+          height: { xs: "25px", sm: "30px", md: "40px" },
         }
       },
     },

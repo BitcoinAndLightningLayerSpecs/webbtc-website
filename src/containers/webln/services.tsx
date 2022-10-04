@@ -21,18 +21,18 @@ export default function ServicesWebLN() {
           link: "https://lnmarkets.com",
         },
         {
-          name: "Podverse",
-          image: "/images/services/podverse.svg",
-          link: "https://www.podverse.com",
-        },
-        {
           name: "Stacker News",
-          image: "/images/services/stackernews.png",
+          image: "/images/services/stackernews.svg",
           link: "https://www.stackernews.com",
         },
         {
+          name: "Podverse",
+          image: "/images/services/podverse.svg",
+          link: "https://www.podverse.fm",
+        },
+        {
           name: "Wavlake",
-          image: "/images/services/wavlake.png",
+          image: "/images/services/wavlake.svg",
           link: "https://www.wavlake.com",
         }
       ]}
