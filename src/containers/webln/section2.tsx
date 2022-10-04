@@ -4,7 +4,7 @@ export default function Section2() {
   const cardInfo = {
     tag: "Developers",
     title: "Integrates as fast as Lightning",
-    text: "Integrating WebLN in your web application is straightforward. Set up support for this new standard today and join the era of total Bitcoin Lightning interoperability!",
+    text: "Integrating WebLN in your web application is straightforward. Set up support for this new standard today and join the era of Bitcoin interoperability!",
     cards: [
       {
         title: "Simple Integration",

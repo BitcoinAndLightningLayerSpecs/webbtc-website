@@ -7,6 +7,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 interface FooterProps {
   column1: {
     title: string;
+    link: string;
   };
   column2: {
     title: string;
@@ -25,6 +26,13 @@ export default function Footer({ column1, column2, column3 }: FooterProps) {
       flexGrow: 1,
       padding: "60px 0px",
       margin: "auto",
+      a: {
+        color: "#fff",
+        textDecoration: "none",
+        "&:hover": {
+          color: "#F2A900",
+        },
+      },
     },
     container: {
       ul: {
@@ -63,7 +71,11 @@ export default function Footer({ column1, column2, column3 }: FooterProps) {
       <Container sx={styles.container}>
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={4}>
-            <Typography sx={styles.title}>{column1.title}</Typography>
+            <Typography sx={styles.title}>
+              <a href={column1.link}>
+                {column1.title}
+              </a>
+            </Typography>
             <ul>
               <li>
                 Made with <FavoriteIcon sx={styles.heartIcon} /> by Bitcoiners

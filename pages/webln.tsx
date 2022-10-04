@@ -7,6 +7,7 @@ import Section1 from "../src/containers/webln/section1";
 import ProvidersWebLN from "../src/containers/webln/providers";
 import { motion } from "framer-motion";
 import FooterWebBTC from "../src/containers/webbtc/footer";
+import Services from "../src/containers/webln/services";
 
 const Home: NextPage = () => {
   return (
@@ -33,7 +34,7 @@ const Home: NextPage = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
-        <Setup />
+        <Services />
       </motion.div>
       <motion.div
         transition={{ ease: "easeIn", duration: 0.5 }}
@@ -41,7 +42,7 @@ const Home: NextPage = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
-        <Section1 />
+        <Setup />
       </motion.div>
       <motion.div
         transition={{ ease: "easeIn", duration: 0.5 }}

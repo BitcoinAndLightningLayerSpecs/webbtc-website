@@ -76,8 +76,8 @@ export default function GetStarted() {
           <Box sx={styles.containerText}>
             <Typography sx={styles.title}>WebBTC &amp; Lightning</Typography>
             <Typography sx={styles.text}>
-              WebLN is an implementation of the WebBTC specification that
-              focuses only on off-chain Lightning Network functionality.
+              WebLN is an implementation of the WebBTC specfication that focuses
+              on off-chain Lightning Network functionality.
             </Typography>
           </Box>
 

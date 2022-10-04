@@ -5,6 +5,7 @@ export default function FooterWebBTC() {
     <Footer
       column1={{
         title: "WebBTC",
+        link: "/"
       }}
       column2={{
         title: "App & Wallet Developers",

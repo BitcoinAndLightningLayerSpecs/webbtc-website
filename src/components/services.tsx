@@ -2,9 +2,8 @@ import { Container, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import { motion } from "framer-motion";
 
-interface ProvidersProps {
+interface ServicesProps {
   title: string;
-  description: string;
   apps: {
     name: string;
     image: string;
@@ -12,8 +11,8 @@ interface ProvidersProps {
   }[];
 }
 
-export default function Providers(props: ProvidersProps) {
-  const { title, description, apps } = props;
+export default function Services(props: ServicesProps) {
+  const { title, apps } = props;
   const styles = {
     root: {
       display: "flex",
@@ -28,28 +27,20 @@ export default function Providers(props: ProvidersProps) {
       maxWidth: "825px",
     },
     title: {
-      fontSize: { xs: "38px", sm: "54px" },
-      fontWeight: "800",
-      lineHeight: { xs: "49px", sm: "70px" },
-    },
-    description: {
-      fontSize: "20px",
-      fontWeight: "400",
-      lineHeight: "30px",
-      opacity: "0.8",
+      fontSize: { xs: "24px", sm: "16px" },
+      opacity: 0.5
     },
     imagesContainer: {
       textAlign: "center",
-      margin: "40px auto",
+      margin: "20px auto",
       display: "flex",
       flexDirection: "row",
       flexWrap: "wrap",
       justifyContent: "space-evenly",
       a: {
-        margin: "10px",
+        margin: "20px",
         img: {
-          width: { xs: "80px", sm: "100px", md: "140px" },
-          height: { xs: "80px", sm: "100px", md: "140px" },
+          height: { xs: "30px", sm: "40px", md: "50px" },
         }
       },
     },
@@ -58,12 +49,14 @@ export default function Providers(props: ProvidersProps) {
     <Container sx={styles.root}>
       <Box sx={styles.rootText}>
         <Typography sx={styles.title}>{title}</Typography>
-        <Typography sx={styles.description}>{description}</Typography>
       </Box>
       <Box sx={styles.imagesContainer}>
         {apps.map(({ image, name, link }) => (
-          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-            <a href={link} rel="noopener">
+          <motion.div style={{
+            filter: 'grayscale(100%)',
+            opacity: 0.5
+          }} whileHover={{ filter: 'none', opacity: 1 }} whileTap={{ scale: 0.8 }}>
+            <a href={link} title={name} rel="noopener">
               <img src={image} alt={name} />
             </a>
           </motion.div>
