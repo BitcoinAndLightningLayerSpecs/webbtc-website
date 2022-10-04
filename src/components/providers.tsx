@@ -62,7 +62,7 @@ export default function Providers(props: ProvidersProps) {
       </Box>
       <Box sx={styles.imagesContainer}>
         {apps.map(({ image, name, link }) => (
-          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} key={name}>
             <a href={link} rel="noopener">
               <img src={image} alt={name} />
             </a>

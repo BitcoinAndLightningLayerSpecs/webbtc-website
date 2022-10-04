@@ -38,7 +38,8 @@ export default function Services(props: ServicesProps) {
       flexWrap: "wrap",
       justifyContent: "center",
       a: {
-        margin: "20px",
+        display: "inline-block",
+        margin: { xs: "10px", sm: "15px", md: "25px" },
         img: {
           height: { xs: "25px", sm: "30px", md: "40px" },
         }
@@ -52,7 +53,7 @@ export default function Services(props: ServicesProps) {
       </Box>
       <Box sx={styles.imagesContainer}>
         {apps.map(({ image, name, link }) => (
-          <motion.div style={{
+          <motion.div key={name} style={{
             filter: 'grayscale(100%)',
             opacity: 0.5
           }} whileHover={{ filter: 'none', opacity: 1 }} whileTap={{ scale: 0.8 }}>

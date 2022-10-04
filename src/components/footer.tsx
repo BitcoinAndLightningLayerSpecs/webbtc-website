@@ -86,7 +86,7 @@ export default function Footer({ column1, column2, column3 }: FooterProps) {
             <Typography sx={styles.title}>{column2.title}</Typography>
             <ul>
               {column2.links.map((link: { title: string; link: string }) => (
-                <li>
+                <li key={link.title}>
                   <a href={link.link}>{link.title}</a>
                 </li>
               ))}
@@ -96,7 +96,7 @@ export default function Footer({ column1, column2, column3 }: FooterProps) {
             <Typography sx={styles.title}>{column3.title}</Typography>
             <ul>
               {column3.links.map((link: { title: string; link: string }) => (
-                <li>
+                <li key={link.title}>
                   <a href={link.link}>{link.title}</a>
                 </li>
               ))}
