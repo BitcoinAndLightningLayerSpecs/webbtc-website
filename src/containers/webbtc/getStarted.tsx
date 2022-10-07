@@ -19,6 +19,7 @@ export default function GetStarted() {
         margin: { xs: "0px", sm: "0px auto 20px" },
         width: "100%",
         maxWidth: { xs: "500px", md: "100%" },
+        borderRadius: "5px"
       },
     },
     title: {
@@ -69,16 +70,14 @@ export default function GetStarted() {
     <Container sx={styles.root}>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6} sx={styles.containerImage}>
-          <img src="/images/illustrations/example.png" alt="setup" />
+          <img src="/images/illustrations/webln-sample.svg" alt="setup" />
         </Grid>
         <Grid item xs={12} md={6}>
           <Box sx={styles.containerText}>
-            <Typography sx={styles.title}>Get started with WebLN</Typography>
+            <Typography sx={styles.title}>WebBTC &amp; Lightning</Typography>
             <Typography sx={styles.text}>
-              WebLN is an implementation of the WebBTC specification that
-              focuses only on off-chain Lightning Network functionality,
-              allowing web apps and client providers to communicate with user
-              wallets.
+              WebLN is an implementation of the WebBTC specfication that focuses
+              on off-chain Lightning Network functionality.
             </Typography>
           </Box>
 
@@ -91,14 +90,6 @@ export default function GetStarted() {
               href="/webln"
             >
               Learn more
-            </Button>
-            <Button
-              variant="contained"
-              sx={styles.button}
-              endIcon={<ChevronRightIcon />}
-              href="https://webln.guide"
-            >
-              Developers Docs
             </Button>
           </Box>
         </Grid>

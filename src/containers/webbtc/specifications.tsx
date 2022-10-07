@@ -19,6 +19,7 @@ export default function Specifications() {
         margin: { xs: "0px", sm: "0px auto 20px" },
         width: "100%",
         maxWidth: { xs: "500px", md: "100%" },
+        borderRadius: "10px"
       },
     },
     title: {

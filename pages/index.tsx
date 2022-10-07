@@ -67,14 +67,6 @@ const Home: NextPage = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
-        <ContactWebBTC />
-      </motion.div>
-      <motion.div
-        transition={{ ease: "easeIn", duration: 0.5 }}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-      >
         <Footer />
       </motion.div>
     </Main>

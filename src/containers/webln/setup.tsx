@@ -44,7 +44,7 @@ export default function Setup() {
     <Container sx={styles.root}>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6} sx={styles.containerImage}>
-          <img src="/images/illustrations/setup.png" alt="setup" />
+          <img src="/images/illustrations/webln-sample.svg" alt="setup" />
         </Grid>
         <Grid item xs={12} md={6}>
           <Box sx={styles.containerText}>
