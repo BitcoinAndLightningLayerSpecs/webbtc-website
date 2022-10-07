@@ -81,8 +81,8 @@ export default function Header(props: {
             <img src={logo} alt={name} />
           </Box>
           <Box sx={styles.navbar}>
-            {links.map((link: { title: string }) => (
-              <NavbarButton>{link.title}</NavbarButton>
+            {links.map((link: { title: string }, index: number) => (
+              <NavbarButton key={`nav-${index}`}>{link.title}</NavbarButton>
             ))}
           </Box>
         </Toolbar>

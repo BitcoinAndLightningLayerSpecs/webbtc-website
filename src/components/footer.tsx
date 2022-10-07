@@ -85,21 +85,25 @@ export default function Footer({ column1, column2, column3 }: FooterProps) {
           <Grid item xs={12} sm={6} md={4}>
             <Typography sx={styles.title}>{column2.title}</Typography>
             <ul>
-              {column2.links.map((link: { title: string; link: string }) => (
-                <li key={link.title}>
-                  <a href={link.link}>{link.title}</a>
-                </li>
-              ))}
+              {column2.links.map(
+                (link: { title: string; link: string }, index: number) => (
+                  <li key={index}>
+                    <a href={link.link}>{link.title}</a>
+                  </li>
+                )
+              )}
             </ul>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Typography sx={styles.title}>{column3.title}</Typography>
             <ul>
-              {column3.links.map((link: { title: string; link: string }) => (
-                <li key={link.title}>
-                  <a href={link.link}>{link.title}</a>
-                </li>
-              ))}
+              {column3.links.map(
+                (link: { title: string; link: string }, index: number) => (
+                  <li key={index}>
+                    <a href={link.link}>{link.title}</a>
+                  </li>
+                )
+              )}
             </ul>
           </Grid>
         </Grid>

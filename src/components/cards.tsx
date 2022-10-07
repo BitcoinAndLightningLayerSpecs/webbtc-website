@@ -99,17 +99,22 @@ export default function Cards({
         <Typography sx={styles.text}>{text}</Typography>
       </Box>
       <Grid container sx={styles.cardsContainer}>
-        {cards.map((card: { image: string; title: string; text: string }) => (
-          <Grid item xs={12} md={4} sx={styles.gridItem}>
-            <Paper sx={styles.paper} elevation={0}>
-              <Box sx={styles.cardImage}>
-                <img src={card.image} alt={card.title} />
-              </Box>
-              <Typography sx={styles.cardTitle}>{card.title}</Typography>
-              <Typography sx={styles.cardText}>{card.text}</Typography>
-            </Paper>
-          </Grid>
-        ))}
+        {cards.map(
+          (
+            card: { image: string; title: string; text: string },
+            index: number
+          ) => (
+            <Grid item xs={12} md={4} sx={styles.gridItem} key={index}>
+              <Paper sx={styles.paper} elevation={0}>
+                <Box sx={styles.cardImage}>
+                  <img src={card.image} alt={card.title} />
+                </Box>
+                <Typography sx={styles.cardTitle}>{card.title}</Typography>
+                <Typography sx={styles.cardText}>{card.text}</Typography>
+              </Paper>
+            </Grid>
+          )
+        )}
       </Grid>
     </Container>
   );
