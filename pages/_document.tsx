@@ -8,7 +8,15 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
+          <link rel="shortcut icon" href="/static/favicon.ico" />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          />
+          <meta name="emotion-insertion-point" content="" />
+          {(this.props as any).emotionStyleTags}
         </Head>
         <body>
           <Main />
