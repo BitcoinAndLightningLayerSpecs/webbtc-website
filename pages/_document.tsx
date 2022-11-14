@@ -19,6 +19,9 @@ export default class MyDocument extends Document {
           <meta name="emotion-insertion-point" content="" />
           {(this.props as any).emotionStyleTags}
 
+
+          <title>WebBTC - Combine the power of bitcoin with your website!</title>
+          <meta property="description" content="WebBTC - Combine the power of bitcoin with your website!" />
           <meta property="og:title" content="WebBTC - Combine the power of bitcoin with your website!" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content={process.env.NEXT_PUBLIC_DOMAIN}/>
