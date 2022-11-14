@@ -6,6 +6,11 @@ export default function ServicesWebLN() {
       title="Services using WebLN"
       apps={[
         {
+          name: "Bitrefill",
+          image: "/images/services/bitrefill.svg",
+          link: "https://www.bitrefill.com",
+        },
+        {
           name: "BOLT.FUN",
           image: "/images/services/bolt-fun.png",
           link: "https://makers.bolt.fun",
@@ -21,19 +26,14 @@ export default function ServicesWebLN() {
           link: "https://lnmarkets.com",
         },
         {
-          name: "Stacker News",
-          image: "/images/services/stackernews.svg",
-          link: "https://www.stackernews.com",
-        },
-        {
           name: "Podverse",
           image: "/images/services/podverse.svg",
           link: "https://www.podverse.fm",
         },
         {
-          name: "Wavlake",
-          image: "/images/services/wavlake.svg",
-          link: "https://www.wavlake.com",
+          name: "Stacker News",
+          image: "/images/services/stackernews.svg",
+          link: "https://www.stackernews.com",
         }
       ]}
     />

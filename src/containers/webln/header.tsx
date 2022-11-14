@@ -5,7 +5,9 @@ export default function HeaderWebLN() {
     <Header
       name="WebLN"
       logo="/images/webln-logo.png"
-      links={[]}
+      links={[
+        { title: "WebBTC", href: "/" },
+      ]}
     />
   );
 }

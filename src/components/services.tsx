@@ -28,7 +28,7 @@ export default function Services(props: ServicesProps) {
     },
     title: {
       fontSize: "16px",
-      opacity: 0.5
+      opacity: 0.75
     },
     imagesContainer: {
       textAlign: "center",
