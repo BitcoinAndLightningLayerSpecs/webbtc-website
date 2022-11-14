@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 const NavbarButton = ({
   children,
   color,
-  href
+  href,
 }: {
   children: any;
   color?:
@@ -19,6 +19,7 @@ const NavbarButton = ({
     | "info"
     | "warning"
     | undefined;
+  href: string;
 }) => {
   const styles = {
     button: {
@@ -38,7 +39,12 @@ const NavbarButton = ({
   };
 
   return (
-    <Button variant="text" color={color ? color : "inherit"} sx={styles.button} href={href}>
+    <Button
+      variant="text"
+      color={color ? color : "inherit"}
+      sx={styles.button}
+      href={href}
+    >
       {children}
     </Button>
   );
@@ -83,9 +89,19 @@ export default function Header(props: {
             <img src={logo} alt={name} />
           </Box>
           <Box sx={styles.navbar}>
-            {links.map((link: { title: string }, index: number) => (
-              <NavbarButton key={`nav-${index}`} href={link.href}>{link.title}</NavbarButton>
-            ))}
+            {links.map(
+              (
+                link: {
+                  href: string;
+                  title: string;
+                },
+                index: number
+              ) => (
+                <NavbarButton key={`nav-${index}`} href={link.href}>
+                  {link.title}
+                </NavbarButton>
+              )
+            )}
           </Box>
         </Toolbar>
       </AppBar>
