@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 const NavbarButton = ({
   children,
   color,
+  href
 }: {
   children: any;
   color?:
@@ -21,7 +22,7 @@ const NavbarButton = ({
 }) => {
   const styles = {
     button: {
-      textTransform: "capitalize",
+      textTransform: "none",
       fontWeight: "500",
       fontStyle: "normal",
       fontSize: {
@@ -37,7 +38,7 @@ const NavbarButton = ({
   };
 
   return (
-    <Button variant="text" color={color ? color : "inherit"} sx={styles.button}>
+    <Button variant="text" color={color ? color : "inherit"} sx={styles.button} href={href}>
       {children}
     </Button>
   );
@@ -48,6 +49,7 @@ export default function Header(props: {
   logo: string;
   links: {
     title: string;
+    href: string;
   }[];
 }) {
   const { name, logo, links } = props;
@@ -82,7 +84,7 @@ export default function Header(props: {
           </Box>
           <Box sx={styles.navbar}>
             {links.map((link: { title: string }, index: number) => (
-              <NavbarButton key={`nav-${index}`}>{link.title}</NavbarButton>
+              <NavbarButton key={`nav-${index}`} href={link.href}>{link.title}</NavbarButton>
             ))}
           </Box>
         </Toolbar>
