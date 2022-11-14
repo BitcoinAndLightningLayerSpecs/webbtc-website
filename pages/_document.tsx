@@ -4,7 +4,6 @@ import theme from "../src/theme";
 import createEmotionCache from "../src/createEmotionCache";
 
 export default class MyDocument extends Document {
-
   render() {
     return (
       <Html lang="en">
@@ -19,18 +18,34 @@ export default class MyDocument extends Document {
           <meta name="emotion-insertion-point" content="" />
           {(this.props as any).emotionStyleTags}
 
-
-          <title>WebBTC - Combine the power of bitcoin with your website!</title>
-          <meta property="description" content="WebBTC - Combine the power of bitcoin with your website!" />
-          <meta property="og:title" content="WebBTC - Combine the power of bitcoin with your website!" />
+          <meta
+            property="description"
+            content="WebBTC - Combine the power of bitcoin with your website!"
+          />
+          <meta
+            property="og:title"
+            content="WebBTC - Combine the power of bitcoin with your website!"
+          />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content={process.env.NEXT_PUBLIC_DOMAIN}/>
-          <meta property="og:image" content={`${process.env.NEXT_PUBLIC_DOMAIN}/images/social/preview.png`} />
-          
-          <meta name="twitter:title" content="WebBTC - Combine the power of bitcoin with your website!" />
-          <meta name="twitter:description" content="WebBTC is a set of specifications for web apps and client providers to facilitate communication with Bitcoin & Lightning wallets. It provides a programmatic, permissioned interface for letting web apps send or receive payments and much more."/>
-          <meta name="twitter:image" content={`${process.env.NEXT_PUBLIC_DOMAIN}/images/social/preview.png`} />
-          <meta name="twitter:card" content="summary_large_image"/>
+          <meta property="og:url" content={process.env.NEXT_PUBLIC_DOMAIN} />
+          <meta
+            property="og:image"
+            content={`${process.env.NEXT_PUBLIC_DOMAIN}/images/social/preview.png`}
+          />
+
+          <meta
+            name="twitter:title"
+            content="WebBTC - Combine the power of bitcoin with your website!"
+          />
+          <meta
+            name="twitter:description"
+            content="WebBTC is a set of specifications for web apps and client providers to facilitate communication with Bitcoin & Lightning wallets. It provides a programmatic, permissioned interface for letting web apps send or receive payments and much more."
+          />
+          <meta
+            name="twitter:image"
+            content={`${process.env.NEXT_PUBLIC_DOMAIN}/images/social/preview.png`}
+          />
+          <meta name="twitter:card" content="summary_large_image" />
         </Head>
         <body>
           <Main />
